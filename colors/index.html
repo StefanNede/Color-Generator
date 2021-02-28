@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color picker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Color Generator</h1>
+    <div class="boxes">
+        <div class="box1 box"><button class = "lockColorButton" onclick="lockColor1()"><img class="lock-img" src="images/lockOpen.PNG" alt="open lock"></button><h4 class="color1-name name">color 1</h4></div>
+        <div class="box2 box"><button class = "lockColorButton" onclick="lockColor2()"><img class="lock-img" src="images/lockOpen.PNG" alt="open lock"></button><h4 class="color2-name name">color 2</h4></div>
+        <div class="box3 box"><button class = "lockColorButton" onclick="lockColor3()"><img class="lock-img" src="images/lockOpen.PNG" alt="open lock"></button><h4 class="color3-name name">color 3</h4></div>
+        <div class="box4 box"><button class = "lockColorButton" onclick="lockColor4()"><img class="lock-img" src="images/lockOpen.PNG" alt="open lock"></button><h4 class="color4-name name">color 4</h4></div>
+        <div class="box5 box"><button class = "lockColorButton" onclick="lockColor5()"><img class="lock-img" src="images/lockOpen.PNG" alt="open lock"></button><h4 class="color5-name name">color 5</h4></div>
+    </div>
+    <button class="new-colors">Generate Colors</button>
+    <script>
+        const lockImages = document.querySelectorAll(".lock-img");
+        const boxes = document.querySelectorAll(".box");
+        const lockColorButtons = document.querySelectorAll(".lockColorButton");
+        const lockColor1=()=>{
+            if (lockImages[0].src.match("images/lockOpen.PNG")){
+                lockImages[0].src="images/lockClosed.PNG";
+                lockImages[0].alt="closed lock";
+            }else{
+                lockImages[0].src="images/lockOpen.PNG";
+                lockImages[0].alt="open lock";
+            }
+            boxes[0].classList.toggle("dontChangeColor");
+        }
+        const lockColor2=()=>{
+            if (lockImages[1].src.match("images/lockOpen.PNG")){
+                lockImages[1].src="images/lockClosed.PNG";
+                lockImages[1].alt="closed lock";
+            }else{
+                lockImages[1].src="images/lockOpen.PNG";
+                lockImages[1].alt="open lock";
+            }
+            boxes[1].classList.toggle("dontChangeColor");
+        }
+        const lockColor3=()=>{
+            if (lockImages[2].src.match("images/lockOpen.PNG")){
+                lockImages[2].src="images/lockClosed.PNG";
+                lockImages[2].alt="closed lock";
+            }else{
+                lockImages[2].src="images/lockOpen.PNG";
+                lockImages[2].alt="open lock";
+            }
+            boxes[2].classList.toggle("dontChangeColor");
+        }
+        const lockColor4=()=>{
+            if (lockImages[3].src.match("images/lockOpen.PNG")){
+                lockImages[3].src="images/lockClosed.PNG";
+                lockImages[3].alt="closed lock";
+            }else{
+                lockImages[3].src="images/lockOpen.PNG";
+                lockImages[3].alt="open lock";
+            }
+            boxes[3].classList.toggle("dontChangeColor");
+        }
+        const lockColor5=()=>{
+            if (lockImages[4].src.match("images/lockOpen.PNG")){
+                lockImages[4].src="images/lockClosed.PNG";
+                lockImages[4].alt="closed lock";
+            }else{
+                lockImages[4].src="images/lockOpen.PNG";
+                lockImages[4].alt="open lock";
+            }
+            boxes[4].classList.toggle("dontChangeColor");
+        }
+    </script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="app.js"></script>
+</html>
